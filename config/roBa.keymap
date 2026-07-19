@@ -203,7 +203,7 @@
         YouTube {
             bindings = <
 &none  &none  &none  &none  &none                    &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW      &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &SoundMute        &YTForward         &mo 7
+&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &SoundMute        &YTForward         &mo 4
 &none  &none  &none  &none  &none  &none      &none  &none          &kp C          &SoundSpeedMinus  &SoundSpeedPlus    &kp RSHFT
 &none  &none  &none  &none  &none  &none      &none  &kp SPACE                                                          &none
             >;
