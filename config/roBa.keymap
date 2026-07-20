@@ -126,6 +126,60 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        F4toF14: F4toF14 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F4TOF14";
+            bindings = <&kp F4>, <&kp F14>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        F5toF15: F5toF15 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F5TOF15";
+            bindings = <&kp F5>, <&kp F15>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        F6toF16: F6toF16 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F6TOF16";
+            bindings = <&kp F6>, <&kp F16>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        F7toF17: F7toF17 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F7TOF17";
+            bindings = <&kp F7>, <&kp F17>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        F8toF18: F8toF18 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F8TOF18";
+            bindings = <&kp F8>, <&kp F18>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        F9toF19: F9toF19 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F9TOF19";
+            bindings = <&kp F9>, <&kp F19>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     keymap {
