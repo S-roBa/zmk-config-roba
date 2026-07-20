@@ -119,6 +119,14 @@
 
             label = "IMEOFF_RBRC";
         };
+
+        IMEOFF_LessThan: IMEOFF_LessThan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp LESS_THAN>;
+
+            label = "IMEOFF_LESSTHAN";
+        };
     };
 
     behaviors {
