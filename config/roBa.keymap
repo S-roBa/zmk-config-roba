@@ -47,56 +47,76 @@
         IMEON_Lkakko: IMEON_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET>;
+            bindings =
+                <&kp LANGUAGE_2>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_BRACKET>;
+
             label = "IMEON_KAKKO";
         };
 
         IMEON_Rkakko: IMEON_Rkakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACKET>;
+            bindings =
+                <&kp LANGUAGE_2>,
+                <&macro_wait_time 30>,
+                <&kp RIGHT_BRACKET>;
+
             label = "IMEON_RKAKKO";
         };
 
-        IMEOFF_Lkakko: IMEOFF_Lkakko {
+        IMEOFF_LBKT: IMEOFF_Lkakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_BRACKET>;
+
             label = "IMEOFF_LKAKKO";
         };
 
-        IMEOFF_Rkakko: IMEOFF_Rkakko {
+        IMEOFF_RBKT: IMEOFF_Rkakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACKET>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 30>,
+                <&kp RIGHT_BRACKET>;
+
             label = "IMEOFF_RKAKKO";
         };
 
         IMEOFF_LPAR: IMEOFF_LPAR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp LPAR>;
+
             label = "IMEOFF_LPAR";
         };
 
         IMEOFF_RPAR: IMEOFF_RPAR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp RPAR>;
+
             label = "IMEOFF_RPAR";
         };
 
         IMEOFF_LBRC: IMEOFF_LBRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LEFT_BRACE>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp LBRC>;
+
             label = "IMEOFF_LBRC";
         };
 
         IMEOFF_RBRC: IMEOFF_RBRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp RBRC>;
+
             label = "IMEOFF_RBRC";
         };
     };
