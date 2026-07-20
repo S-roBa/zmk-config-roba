@@ -198,10 +198,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &F7toF17  &F8toF18  &F9toF19  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &F4toF14  &F5toF15  &F6toF16  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &F1toF11  &F2toF12  &F3toF13  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans    &trans  &trans      &trans  &trans                          &trans
+&trans     &F7toF17  &F8toF18  &F9toF19  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans     &F4toF14  &F5toF15  &F6toF16  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans    &trans    &trans    &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
