@@ -71,6 +71,34 @@
             bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACKET>;
             label = "IMEOFF_RKAKKO";
         };
+
+        IMEOFF_LPAR: IMEOFF_LPAR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp>;
+            label = "IMEOFF_LPAR";
+        };
+
+        IMEOFF_RPAR: IMEOFF_RPAR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp>;
+            label = "IMEOFF_RPAR";
+        };
+
+        IMEOFF_LBRC: IMEOFF_LBRC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LEFT_BRACE>;
+            label = "IMEOFF_LBRC";
+        };
+
+        IMEOFF_RBRC: IMEOFF_RBRC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp>;
+            label = "IMEOFF_RBRC";
+        };
     };
 
     behaviors {
