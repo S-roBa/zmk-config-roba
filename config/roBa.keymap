@@ -43,6 +43,34 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        IMEON_Lkakko: IMEON_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET>;
+            label = "IMEON_KAKKO";
+        };
+
+        IMEON_Rkakko: IMEON_Rkakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACKET>;
+            label = "IMEON_RKAKKO";
+        };
+
+        IMEOFF_Lkakko: IMEOFF_Lkakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET>;
+            label = "IMEOFF_LKAKKO";
+        };
+
+        IMEOFF_Rkakko: IMEOFF_Rkakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACKET>;
+            label = "IMEOFF_RKAKKO";
+        };
     };
 
     behaviors {
