@@ -127,6 +127,22 @@
 
             label = "IMEOFF_LESSTHAN";
         };
+
+        IMEOFF_Percent: IMEOFF_Percent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp PERCENT>;
+
+            label = "IMEOFF_PERCENT";
+        };
+
+        IMEOFF_Caret: IMEOFF_Caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp CARET>;
+
+            label = "IMEOFF_CARET";
+        };
     };
 
     behaviors {
@@ -291,10 +307,10 @@
 
         NUMandARROW {
             bindings = <
-&kp PERCENT      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp CARET                                        &kp LG(LC(LEFT))  &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)   &kp LG(LC(RIGHT))
-&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &none              &none           &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &mt RALT RIGHT  &mt LGUI END
-&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS   &kp LESS_THAN      &kp LC(W)       &kp LC(LS(T))     &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)     &kp LC(T)
-&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans        &none              &kp KP_NUMLOCK  &trans                                                             &none
+&IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LG(LC(LEFT))  &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)   &kp LG(LC(RIGHT))
+&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &none                 &none           &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &mt RALT RIGHT  &mt LGUI END
+&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LC(W)       &kp LC(LS(T))     &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)     &kp LC(T)
+&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                             &none
             >;
         };
 
