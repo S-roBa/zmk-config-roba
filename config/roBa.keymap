@@ -380,10 +380,10 @@
 
         Bluetooth {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                               &none  &none          &none  &none  &tog 7
-&out OUT_TOG  &none         &none         &none         &none         &sys_reset      &bootloader  &none  &none          &none  &none  &tog 8
-&none         &none         &none         &none         &none         &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none  &none
-&sys_reset    &none         &none         &none         &none         &none           &none        &none                               &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                               &none  &none          &none  &none   &kp PRINTSCREEN
+&out OUT_TOG  &none         &none         &none         &none         &sys_reset      &bootloader  &none  &none          &none  &tog 7  &tog 8
+&none         &none         &none         &none         &none         &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &none
+&sys_reset    &none         &none         &none         &none         &none           &none        &none                                &trans
             >;
         };
     };
