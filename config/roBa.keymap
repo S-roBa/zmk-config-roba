@@ -143,6 +143,14 @@
 
             label = "IMEOFF_CARET";
         };
+
+        IMEOFF_MoreThan: IMEOFF_MoreThan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&macro_wait_time 30>, <&kp GREATER_THAN>;
+
+            label = "IMEOFF_MORETHAN";
+        };
     };
 
     behaviors {
@@ -316,10 +324,10 @@
 
         ARROW {
             bindings = <
-&kp ESC    &none   &none   &none  &none                     &kp SQT        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-&none      &none   &none   &none  &none   &none      &none  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&kp LSHFT  &none   &none   &none  &none   &none      &none  &kp GRAVE      &none                 &none                  &none  &none
-&trans     &trans  &trans  &none  &trans  &none      &none  &none                                                              &none
+&kp ESC    &none   &none   &none  &none                     &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
+&none      &none   &none   &none  &none   &none      &none  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
+&kp LSHFT  &none   &none   &none  &none   &none      &none  &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
+&trans     &trans  &trans  &none  &trans  &none      &none  &none                                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
