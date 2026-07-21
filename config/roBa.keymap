@@ -327,7 +327,7 @@
 &kp ESC    &none   &none   &none  &none                     &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
 &none      &none   &none   &none  &none   &none      &none  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
 &kp LSHFT  &none   &none   &none  &none   &none      &none  &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
-&trans     &trans  &trans  &none  &trans  &none      &none  &none                                                          &none
+&trans     &trans  &trans  &none  &trans  &none      &none  &kp DELETE                                                     &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
