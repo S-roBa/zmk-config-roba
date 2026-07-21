@@ -311,6 +311,8 @@
 &kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10  &trans      &none   &none  &none  &none  &none  &none
 &trans     &trans    &trans    &none     &trans   &none       &trans  &none                       &none
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         NUMandARROW {
@@ -335,10 +337,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                      &to_layer_0 Y  &mkp MB3   &kp LG(TAB)  &to_layer_0 O  &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &trans  &mkp MB5       &mkp MB1   &mkp MB2     &trans         &trans
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &trans  &mkp MB4       &kp RC(Z)  &kp LC(Y)    &trans         &trans
-&trans         &trans         &trans         &trans         &trans         &trans      &trans  &trans                                                &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                               &to_layer_0 Y  &mkp MB3   &kp LG(TAB)  &to_layer_0 O  &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans      &to_layer_0 F20  &mkp MB5       &mkp MB1   &mkp MB2     &trans         &trans
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B  &trans      &to_layer_0 B    &mkp MB4       &kp RC(Z)  &kp LC(Y)    &trans         &trans
+&trans         &trans         &trans         &trans         &trans         &trans      &trans           &trans                                                &trans
             >;
         };
 
