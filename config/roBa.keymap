@@ -306,10 +306,10 @@
 
         FUNCTION {
             bindings = <
-&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                            &none  &none  &none  &none  &none
-&none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &none       &trans  &none  &none  &none  &none  &none
-&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10        &trans      &none   &none  &none  &none  &none  &none
-&trans     &trans    &trans    &none     &mt LSHFT F20  &none       &trans  &none                       &none
+&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                   &none          &none          &none  &kp LS(LC(O))  &none
+&none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &none              &trans  &none          &kp LS(LC(F))  &none  &none          &none
+&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10        &kp LC(SPACE)      &none   &kp LS(LC(R))  &none          &none  &none          &none
+&trans     &trans    &trans    &none     &mt LSHFT F20  &none              &trans  &none                                               &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -326,10 +326,10 @@
 
         SYMBOL {
             bindings = <
-&kp ESC    &kp AMPERSAND    &none          &none       &none                     &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
-&kp SLASH  &kp PIPE         &kp BACKSLASH  &kp DOLLAR  &none   &none      &none  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
-&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH    &none   &none      &none  &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
-&trans     &trans           &trans         &trans      &trans  &none      &none  &kp DELETE                                                     &none
+&kp ESC    &kp AMPERSAND       &none          &none       &none                     &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
+&kp SLASH  &mt LC(LSHFT) PIPE  &kp BACKSLASH  &kp DOLLAR  &none   &none      &none  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
+&kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &none   &none      &none  &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
+&trans     &trans              &trans         &trans      &trans  &none      &none  &kp DELETE                                                     &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -353,12 +353,12 @@
             >;
         };
 
-        GESTUREandCODE {
+        GESTURE {
             bindings = <
-&none              &none  &none                  &none  &none                    &none  &none  &none  &none  &none
-&kp LS(LC(SLASH))  &none  &kp LS(LC(BACKSLASH))  &none  &none  &none      &none  &none  &none  &none  &none  &none
-&none              &none  &none                  &none  &none  &none      &none  &none  &none  &none  &none  &none
-&none              &none  &none                  &none  &none  &none      &none  &none                       &none
+&none  &none  &none  &none  &none                    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none                       &none
             >;
         };
 
