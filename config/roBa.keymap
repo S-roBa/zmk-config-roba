@@ -307,7 +307,7 @@
         FUNCTION {
             bindings = <
 &none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                   &none          &none          &none  &kp LS(LC(O))  &none
-&none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &none              &trans  &none          &kp LS(LC(F))  &none  &none          &none
+&none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &none              &trans  &kp LC(H)      &kp LS(LC(F))  &none  &none          &none
 &kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10        &kp LC(SPACE)      &none   &kp LS(LC(R))  &none          &none  &none          &none
 &trans     &trans    &trans    &none     &mt LSHFT F20  &none              &trans  &none                                               &none
             >;
