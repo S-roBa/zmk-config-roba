@@ -333,8 +333,6 @@
 &kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &none   &trans      &none   &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
 &trans     &trans              &trans         &trans      &trans  &none       &none   &kp DELETE                                                     &none
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
