@@ -322,6 +322,8 @@
 &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LC(W)       &kp LC(LS(T))     &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)     &kp LC(T)
 &trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                             &none
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         SYMBOL {
