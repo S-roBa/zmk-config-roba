@@ -304,7 +304,7 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        FUNCTIONandCODE {
             bindings = <
 &none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                   &none          &none          &none  &kp LS(LC(O))  &none
 &none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &trans      &trans         &kp LC(H)      &kp LS(LC(F))  &none  &none          &none
