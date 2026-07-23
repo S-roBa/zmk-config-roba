@@ -311,8 +311,6 @@
 &kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10        &trans      &kp LC(SPACE)  &kp LS(LC(R))  &none          &none  &none          &none
 &trans     &trans    &trans    &none     &mt LSHFT F20  &none       &trans         &none                                               &none
             >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         NUMandARROW {
