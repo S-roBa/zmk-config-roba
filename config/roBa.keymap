@@ -220,7 +220,7 @@
         F2toF12: F2toF12 {
             compatible = "zmk,behavior-mod-morph";
             label = "F2TOF12";
-            bindings = <&kp F3>, <&kp F13>;
+            bindings = <&kp F2>, <&kp F12>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
