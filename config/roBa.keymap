@@ -352,8 +352,6 @@
             bindings = <&mo>, <&bspc_del>;
         };
 
-        / {
-
         mb2_mo: mb2_or_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
