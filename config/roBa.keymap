@@ -10,20 +10,20 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
+    automouse-layer = <10 11>;
+    scroll-layers = <13>;
 
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+	arrows {
+		layers = <14>;
+	    bindings =
+	    <&kp RIGHT_ARROW>,
+	    <&kp LEFT_ARROW>,
+	    <&kp UP_ARROW>,
+	    <&kp DOWN_ARROW>;
+	    tick = <10>;
+	    wait-ms = <5>;
+	    tap-ms = <5>;
+	};
 };
 
 / {
