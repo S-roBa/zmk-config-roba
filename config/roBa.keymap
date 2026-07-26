@@ -151,6 +151,41 @@
 
             label = "IMEOFF_MORETHAN";
         };
+
+        Windows1: Windows1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "WINDOWS1";
+        };
+
+        MacOS: MacOS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 1>;
+            label = "MACOS";
+        };
+
+        iPhone: iPhone {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 2>;
+            label = "IPHONE";
+        };
+
+        iPad: iPad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &to 2>;
+            label = "IPAD";
+        };
+
+        Windows2: Windows2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &to 0>;
+            label = "WINDOWS2";
+        };
     };
 
     behaviors {
@@ -295,10 +330,32 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                                 &kp Y            &kp U  &kp I        &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp F20      &kp H            &kp J  &lt 5 K      &lt 7 L  &lt 4 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &kp B        &kp N            &kp M  &lt 6 COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANG1  &mt LEFT_SHIFT SPACE  &lt 7 LANG2        &lt 1 ENTER  &lt 2 BACKSPACE                               &mo 9
+&kp Q      &kp W         &kp E         &kp R        &kp T                                                 &kp Y            &kp U  &kp I         &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp F20      &kp H            &kp J  &lt 10 K      &lt 12 L  &lt 8 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &kp B        &kp N            &kp M  &lt 11 COMMA  &kp DOT   &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 12 LANG2       &lt 3 ENTER  &lt 5 BACKSPACE                                 &mo 15
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        MACOS {
+            bindings = <
+&kp Q     &kp W      &kp E         &kp R        &kp T                                                &kp Y            &kp U  &kp I         &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1          &kp F20      &kp H            &kp J  &lt 10 K      &lt 12 L  &lt 8 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &mt LGUI TAB      &kp B        &kp N            &kp M  &lt 11 COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 12 LANG2      &lt 3 ENTER  &lt 5 BACKSPACE                                 &mo 15
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        IOS {
+            bindings = <
+&kp Q     &kp W      &kp E         &kp R        &kp T                                                &kp Y            &kp U  &kp I         &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1          &kp F20      &kp H            &kp J  &lt 10 K      &lt 12 L  &lt 8 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &mt LGUI TAB      &kp B        &kp N            &kp M  &lt 11 COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 12 LANG2      &lt 3 ENTER  &lt 5 BACKSPACE                                 &mo 15
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -313,7 +370,27 @@
             >;
         };
 
+        FandCforMAC {
+            bindings = <
+&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                   &none          &none          &none  &kp LS(LC(O))  &none
+&none      &F4toF14  &F5toF15  &F6toF16  &kp F11        &trans      &trans         &kp LC(H)      &kp LS(LC(F))  &none  &none          &none
+&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10        &trans      &kp LC(SPACE)  &kp LS(LC(R))  &none          &none  &none          &none
+&trans     &trans    &trans    &none     &mt LSHFT F20  &none       &trans         &none                                               &none
+            >;
+        };
+
         NUMandARROW {
+            bindings = <
+&IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LG(LC(LEFT))  &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)   &kp LG(LC(RIGHT))
+&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans                &trans          &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &mt RALT RIGHT  &mt LGUI END
+&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LC(W)       &kp LC(LS(T))     &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)     &kp LC(T)
+&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                             &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        NandAforMAC {
             bindings = <
 &IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LG(LC(LEFT))  &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)   &kp LG(LC(RIGHT))
 &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans                &trans          &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &mt RALT RIGHT  &mt LGUI END
@@ -335,10 +412,19 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                &to_layer_0 T                                                  &to_layer_0 Y  &mkp MB3     &kp LG(TAB)  &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F                &to_layer_0 G  &trans                           &trans         &mkp MB5       &mkp MB1     &mkp MB2     &to_layer_0 L       &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                           &to_layer_0 B  &mkp MB4       &lt 6 LC(Z)  &kp LC(Y)    &to_layer_0 PERIOD  &to_layer_0 SLASH
-&trans         &trans         &trans         &lt_to_layer_0 3 LANGUAGE_1  &trans         &lt_to_layer_0 7 LANGUAGE_2      &trans         &trans                                                       &none
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                &to_layer_0 T                                                   &to_layer_0 Y  &mkp MB3      &kp LG(TAB)  &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F                &to_layer_0 G  &trans                            &trans         &mkp MB5       &mkp MB1      &mkp MB2     &to_layer_0 L       &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 11 LC(Z)  &kp LC(Y)    &to_layer_0 PERIOD  &to_layer_0 SLASH
+&trans         &trans         &trans         &lt_to_layer_0 7 LANGUAGE_1  &trans         &lt_to_layer_0 12 LANGUAGE_2      &trans         &trans                                                        &none
+            >;
+        };
+
+        MOUSEforMAC {
+            bindings = <
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                &to_layer_0 T                                                   &to_layer_0 Y  &mkp MB3      &kp LG(TAB)  &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F                &to_layer_0 G  &trans                            &trans         &mkp MB5       &mkp MB1      &mkp MB2     &to_layer_0 L       &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 11 LC(Z)  &kp LC(Y)    &to_layer_0 PERIOD  &to_layer_0 SLASH
+&trans         &trans         &trans         &lt_to_layer_0 7 LANGUAGE_1  &trans         &lt_to_layer_0 12 LANGUAGE_2      &trans         &trans                                                        &none
             >;
         };
 
@@ -363,7 +449,7 @@
         MOUSE_SLOW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 10  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
@@ -372,7 +458,16 @@
         YouTube {
             bindings = <
 &none  &none  &none  &none  &none                    &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 4
+&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 8
+&none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
+            >;
+        };
+
+        YouTubeforMAC {
+            bindings = <
+&none  &none  &none  &none  &none                    &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 8
 &none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
 &none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
             >;
@@ -380,10 +475,10 @@
 
         Bluetooth {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                               &none  &none          &none  &none    &kp PRINTSCREEN
-&out OUT_TOG  &none         &none         &none         &none         &sys_reset      &bootloader  &none  &none          &none  &tog 10  &tog 8
-&none         &none         &none         &none         &none         &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none    &none
-&sys_reset    &none         &none         &none         &none         &none           &none        &none                                 &trans
+&Windows1     &MacOS        &iPhone       &iPad         &Windows2                                  &none  &none          &none  &none   &kp PRINTSCREEN
+&out OUT_TOG  &none         &none         &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 16  &to 13
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &none
+&to 0         &to 1         &to 2         &none         &none         &none           &none        &none                                &trans
             >;
         };
 
