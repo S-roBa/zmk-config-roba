@@ -27,14 +27,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -331,8 +324,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R        &kp T                                                  &kp Y            &kp U  &kp I         &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &mt LALT F20  &kp H            &kp J  &lt 10 K      &lt 12 L  &lt 8 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &kp B         &kp N            &kp M  &lt 11 COMMA  &kp DOT   &kp SLASH
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &mt LALT F20  &kp H            &kp J  &lt 13 K      &lt 12 L  &lt 10 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &kp B         &kp N            &kp M  &lt 14 COMMA  &kp DOT   &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 12 LANG2       &lt 3 ENTER   &lt 5 BACKSPACE                                 &mo 15
             >;
 
@@ -342,9 +335,9 @@
         APPLE-DEFAULT {
             bindings = <
 &kp Q     &kp W      &kp E         &kp R        &kp T                                                 &kp Y            &kp U  &kp I         &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1          &mt LALT F20  &kp H            &kp J  &lt 10 K      &lt 12 L  &lt 8 MINUS
-&kp Z     &kp X      &kp C         &kp V        &kp B                 &mt LGUI TAB      &kp B         &kp N            &kp M  &lt 11 COMMA  &kp DOT   &kp SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 2 LANG2       &lt 4 ENTER   &lt 5 BACKSPACE                                 &mo 15
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1          &mt LALT F20  &kp H            &kp J  &lt 13 K      &lt 12 L  &lt 11 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &mt LGUI TAB      &kp B         &kp N            &kp M  &lt 14 COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG1  &mt LEFT_SHIFT SPACE  &lt 2 LANG2       &lt 4 ENTER   &lt 6 BACKSPACE                                 &mo 15
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -352,10 +345,10 @@
 
         APPLE {
             bindings = <
-&none  &none  &none  &none  &none                    &kp LG(NUMBER_1)  &kp LG(LA(UP_ARROW))        &kp LA(LC(LG(NUMBER_2)))  &kp LG(LA(RIGHT_ARROW))      &none
-&none  &none  &none  &none  &none  &none      &none  &kp LG(NUMBER_2)  &kp LG(LA(LC(LEFT_ARROW)))  &kp LG(LC(F))             &kp LG(LA(LC(RIGHT_ARROW)))  &none
-&none  &none  &none  &none  &none  &none      &none  &kp LG(NUMBER_3)  &kp LG(LA(LEFT_ARROW))      &kp LA(LC(LG(NUMBER_4)))  &kp LG(LA(DOWN_ARROW))       &none
-&none  &none  &none  &none  &none  &none      &none  &none                                                                                                &none
+&none  &none  &none  &none  &none                           &kp LG(NUMBER_1)  &kp LG(LA(UP_ARROW))        &kp LA(LC(LG(NUMBER_2)))  &kp LG(LA(RIGHT_ARROW))      &none
+&none  &none  &none  &none  &none  &none      &kp GLOBE     &kp LG(NUMBER_2)  &kp LG(LA(LC(LEFT_ARROW)))  &kp LG(LC(F))             &kp LG(LA(LC(RIGHT_ARROW)))  &none
+&none  &none  &none  &none  &none  &none      &kp UP_ARROW  &kp LG(NUMBER_3)  &kp LG(LA(LEFT_ARROW))      &kp LA(LC(LG(NUMBER_4)))  &kp LG(LA(DOWN_ARROW))       &none
+&none  &none  &none  &none  &none  &none      &none         &none                                                                                                &none
             >;
         };
 
@@ -408,11 +401,29 @@
             >;
         };
 
+        YouTube {
+            bindings = <
+&none  &none  &none  &none  &none                    &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 10
+&none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
+            >;
+        };
+
+        YouTubeforMAC {
+            bindings = <
+&none  &none  &none  &none  &none                    &kp LG(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &none      &none  &kp LS(LG(T))  &YTBack        &YTMute        &YTForward         &mo 11
+&none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
+            >;
+        };
+
         MOUSE {
             bindings = <
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                &to_layer_0 T                                                   &to_layer_0 Y  &mkp MB3      &kp LG(TAB)  &to_layer_0 O       &to_layer_0 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F                &to_layer_0 G  &trans                            &trans         &mkp MB5       &mkp MB1      &mkp MB2     &to_layer_0 L       &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 11 LC(Z)  &kp LC(Y)    &to_layer_0 PERIOD  &to_layer_0 SLASH
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 14 LC(Z)  &kp LC(Y)    &to_layer_0 PERIOD  &to_layer_0 SLASH
 &trans         &trans         &trans         &lt_to_layer_0 7 LANGUAGE_1  &trans         &lt_to_layer_0 12 LANGUAGE_2      &trans         &trans                                                        &none
             >;
         };
@@ -421,8 +432,17 @@
             bindings = <
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R                &to_layer_0 T                                                   &to_layer_0 Y  &mkp MB3      &kp LC(UP_ARROW)  &to_layer_0 O       &to_layer_0 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F                &to_layer_0 G  &trans                            &trans         &mkp MB5       &mkp MB1      &mkp MB2          &to_layer_0 L       &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 11 LG(Z)  &kp LG(LS(Z))     &to_layer_0 PERIOD  &to_layer_0 SLASH
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V                &to_layer_0 B  &trans                            &to_layer_0 B  &mkp MB4       &lt 14 LG(Z)  &kp LG(LS(Z))     &to_layer_0 PERIOD  &to_layer_0 SLASH
 &trans         &trans         &trans         &lt_to_layer_0 7 LANGUAGE_1  &trans         &lt_to_layer_0 12 LANGUAGE_2      &trans         &trans                                                             &none
+            >;
+        };
+
+        MOUSE_SLOW {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 13  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
         };
 
@@ -444,38 +464,11 @@
             >;
         };
 
-        MOUSE_SLOW {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 10  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
-            >;
-        };
-
-        YouTube {
-            bindings = <
-&none  &none  &none  &none  &none                    &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &none      &none  &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 8
-&none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
-            >;
-        };
-
-        YouTubeforMAC {
-            bindings = <
-&none  &none  &none  &none  &none                    &kp LG(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &none      &none  &kp LS(LG(T))  &YTBack        &YTMute        &YTForward         &mo 8
-&none  &none  &none  &none  &none  &none      &none  &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none      &mo 0  &kp SPACE                                                       &none
-            >;
-        };
-
         Bluetooth {
             bindings = <
 &Windows1     &MacOS        &iPhone       &iPad         &Windows2                                  &none  &none          &none  &none   &kp PRINTSCREEN
-&to 0         &to 1         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 16  &to 13
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &none
+&to 0         &to 1         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 16  &to 9
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &to 8
 &none         &none         &none         &none         &none         &none           &none        &none                                &trans
             >;
         };
