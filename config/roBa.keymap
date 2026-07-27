@@ -366,7 +366,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1       &bspc_mo 3 0  &lt 5 ENTER                                 &mo 17
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         APPLE-DEFAULT {
@@ -377,7 +377,7 @@
 &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 2 LANG1       &bspc_mo 4 0  &lt 6 ENTER                                 &mo 17
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         APPLE {
@@ -388,7 +388,7 @@
 &none  &none  &none  &none  &none  &none      &none         &none                                                                                                &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTIONandCODE {
@@ -399,7 +399,7 @@
 &trans     &trans    &trans    &none     &mt LSHFT F20  &none       &trans         &none                                               &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FandCforMAC-mada {
@@ -410,7 +410,7 @@
 &trans     &trans    &trans    &none     &mt LSHFT F20  &none       &trans         &none                                               &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUMandARROW {
@@ -443,7 +443,7 @@
 &trans     &trans              &trans         &trans      &trans  &none       &none   &none                                                          &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         YouTube {
@@ -454,7 +454,7 @@
 &none  &none  &none  &none  &none  &none      &mo 10  &kp SPACE                                                       &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         YouTubeforMAC {
@@ -465,7 +465,7 @@
 &none  &none  &none  &none  &none  &none      &mo 10  &kp SPACE                                                       &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         YouTube-Typing {
@@ -476,7 +476,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &kp LANG1      &bspc_del  &kp KP_ENTER                                 &mo 17
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -487,7 +487,7 @@
 &trans         &trans         &trans         &to_layer_0 LANG2  &kp LSHFT      &lt_to_layer_0 13 LANG1      &trans         &trans                                                        &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSEforMAC {
@@ -498,7 +498,7 @@
 &trans         &trans         &trans         &to_layer_1 LANG2  &kp LSHIFT     &lt_to_layer_1 13 LANG1      &trans         &trans                                                           &none
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE_SLOW {
@@ -509,7 +509,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -520,7 +520,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         GESTURE {
@@ -531,7 +531,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         LogicPro {
@@ -542,7 +542,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Bluetooth {
