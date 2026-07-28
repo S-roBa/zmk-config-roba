@@ -415,10 +415,10 @@
 
         NUMandARROW {
             bindings = <
-&IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LG(LC(LEFT))  &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)  &kp LG(LC(RIGHT))
-&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT      &mt LGUI END
-&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LC(W)       &kp LC(LS(T))     &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)    &kp LC(T)
-&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                            &none
+&IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LC(W)               &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)  &kp LC(LS(T))
+&kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT      &mt LGUI END
+&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LC(T)       &kp LC(LG(LEFT_ARROW))  &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)    &kp LC(LG(RIGHT_ARROW))
+&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -426,10 +426,10 @@
 
         NandAforMAC {
             bindings = <
-&IMEOFF_Percent  &kp N7        &kp N8        &kp N9        &IMEOFF_Caret                                        &kp LC(LEFT)   &kp LG(LS(TAB))  &kp UP_ARROW      &kp LG(TAB)      &kp LC(RIGHT)
-&kp KP_SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME  &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &mt LG(LCTRL) END
-&kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LG(W)       &kp LS(LG(T))  &kp LS(LA(TAB))  &kp LC(UP_ARROW)  &kp LA(TAB)      &kp LG(T)
-&trans           &kp N0        &kp KP_DOT    &kp KP_EQUAL  &trans         &none                 &kp KP_NUMLOCK  &trans                                                             &none
+&IMEOFF_Percent  &kp N7        &kp N8        &kp N9        &IMEOFF_Caret                                        &kp LG(W)           &kp LG(LS(TAB))  &kp UP_ARROW      &kp LG(TAB)      &kp LG(LS(T))
+&kp KP_SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME       &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &mt LG(LCTRL) END
+&kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &kp LG(T)       &kp LC(LEFT_ARROW)  &kp LS(LA(TAB))  &kp LC(UP_ARROW)  &kp LA(TAB)      &kp LC(RIGHT_ARROW)
+&trans           &kp N0        &kp KP_DOT    &kp KP_EQUAL  &trans         &none                 &kp KP_NUMLOCK  &trans                                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -448,10 +448,10 @@
 
         YouTube {
             bindings = <
-&none  &none  &none  &none  &none                     &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 0      &none   &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 10
-&none  &none  &none  &none  &none  &none      &none   &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none      &mo 10  &kp SPACE                                                       &none
+&none  &none  &none  &none  &none                       &kp LC(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &to 0      &none     &kp LS(LC(T))  &YTBack        &YTMute        &YTForward         &mo 11
+&none  &none  &none  &none  &none  &none      &mkp MB1  &mkp MB3       &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none      &mo 10    &kp SPACE                                                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -459,10 +459,10 @@
 
         YouTubeforMAC {
             bindings = <
-&none  &none  &none  &none  &none                     &kp LG(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 1      &none   &kp LS(LG(T))  &YTBack        &YTMute        &YTForward         &mo 10
-&none  &none  &none  &none  &none  &none      &none   &none          &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none      &mo 10  &kp SPACE                                                       &none
+&none  &none  &none  &none  &none                       &kp LG(W)      &kp LC(PG_UP)  &kp UP_ARROW   &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &to 1      &none     &kp LS(LG(T))  &YTBack        &YTMute        &YTForward         &mo 10
+&none  &none  &none  &none  &none  &none      &mkp MB1  &mkp MB3       &kp C          &YTSpeedMinus  &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none      &mo 10    &kp SPACE                                                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
