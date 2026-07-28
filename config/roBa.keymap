@@ -12,7 +12,7 @@
 };
 
 &trackball {
-    automouse-layer = <11>;
+    //automouse-layer = <11>;
     scroll-layers = <14>;
     snipe-layers = <13>;
 
