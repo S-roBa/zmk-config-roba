@@ -21,7 +21,7 @@
         bindings = <&kp LC(Y)>, <&kp LC(Z)>, <&kp LC(V)>, <&kp LC(C)>;
 
         tick = <10>;
-        wait-ms = <5>;
+        wait-ms = <500>;
         tap-ms = <5>;
     };
 };
