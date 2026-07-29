@@ -13,6 +13,7 @@
 
 &trackball {
     //automouse-layer = <11>;
+
     scroll-layers = <14>;
     snipe-layers = <13>;
 
@@ -353,6 +354,23 @@
 
             tap-ms = <20>;
         };
+
+        B_F20: B_F20 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_F20";
+            bindings = <&kp B>, <&kp F20>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        kp_mkp: kp_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_MKP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&mkp>;
+        };
     };
 
     keymap {
@@ -360,10 +378,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                                  &kp Y        &kp U  &kp I         &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &mt LALT F20  &kp H        &kp J  &lt 14 K      &lt 13 L  &lt 11 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &kp B         &kp N        &kp M  &lt 15 COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1       &bspc_mo 3 0  &lt 5 ENTER                                 &mo 17
+&kp Q      &kp W         &kp E         &kp R        &kp T                                                      &kp Y        &kp U  &kp I         &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp_mkp LALT MB1  &kp H        &kp J  &lt 14 K      &lt 13 L  &lt 11 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &B_F20            &kp N        &kp M  &lt 15 COMMA  &kp DOT   &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1       &bspc_mo 3 0      &lt 5 ENTER                                 &mo 17
             >;
 
             sensor-bindings = <&scroll_up_down>;
