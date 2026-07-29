@@ -21,8 +21,8 @@
         layers = <15>;
         bindings = <&kp LC(Y)>, <&kp LC(Z)>, <&kp LC(V)>, <&kp LC(C)>;
 
-        tick = <10>;
-        wait-ms = <500>;
+        tick = <500>;
+        wait-ms = <10>;
         tap-ms = <5>;
     };
 };
