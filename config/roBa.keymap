@@ -381,7 +381,7 @@
 &kp Q      &kp W         &kp E         &kp R        &kp T                                                      &kp Y        &kp U  &lt 14 I   &kp O     &kp P
 &kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp_mkp LALT MB1  &kp H        &kp J  &lt 15 K   &lt 13 L  &lt 11 MINUS
 &kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &B_F20            &kp N        &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1       &bspc_mo 3 0      &lt 5 ENTER                              &mo 17
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 11 LANG1       &bspc_mo 3 0      &lt 5 ENTER                              &mo 17
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -574,10 +574,10 @@
 
         auto-mouse-archive {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R      &to_layer_0 T                                              &to_layer_0 Y  &kp LG(TAB)  &mkp MB3       &to_layer_0 O        &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F      &to_layer_0 G  &trans                       &trans         &mkp MB5       &mkp MB1     &mb_mo 14 MB2  &lt_to_layer_0 13 L  &lt_to_layer_0 11 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V      &to_layer_0 B  &trans                       &to_layer_0 B  &mkp MB4       &kp LC(Z)    &lt 15 LC(Y)   &to_layer_0 PERIOD   &to_layer_0 SLASH
-&trans         &trans         &trans         &to_layer_0 LANG2  &kp LSHFT      &lt_to_layer_0 13 LANG1      &trans         &trans                                                          &none
+&to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                &to_layer_0 Y  &kp LG(TAB)  &mkp MB3       &to_layer_0 O        &to_layer_0 P
+&to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &trans                       &trans         &mkp MB5       &mkp MB1     &mb_mo 14 MB2  &lt_to_layer_0 13 L  &lt_to_layer_0 11 MINUS
+&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &mt LCTRL TAB                &to_layer_0 B  &mkp MB4       &kp LC(Z)    &lt 15 LC(Y)   &to_layer_0 PERIOD   &to_layer_0 SLASH
+&to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &lt_to_layer_0 13 LANG1      &trans         &trans                                                          &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
