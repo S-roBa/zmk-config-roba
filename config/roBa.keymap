@@ -378,10 +378,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                                      &kp Y        &kp U  &lt 15 I   &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K   &lt 14 L  &lt 13 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &B_F20            &kp N        &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 11 LANG1       &bspc_mo 3 0      &lt 5 ENTER                              &mo 19
+&kp Q      &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 13 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &lt 11 TAB           &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &bspc_del         &lt 5 ENTER                                 &mo 19
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -457,7 +457,7 @@
             bindings = <
 &kp ESC    &kp AMPERSAND       &none          &none       &none                       &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
 &kp SLASH  &mt LC(LSHFT) PIPE  &kp BACKSLASH  &kp DOLLAR  &none   &trans      &trans  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
-&kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &none   &trans      &none   &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &none
+&kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &none   &trans      &none   &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &kp EXCL
 &trans     &trans              &trans         &trans      &trans  &none       &none   &none                                                          &none
             >;
 
