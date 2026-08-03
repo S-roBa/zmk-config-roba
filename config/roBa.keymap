@@ -17,7 +17,7 @@
     scroll-layers = <15>;
     snipe-layers = <14>;
 
-    arrows {
+    arrows_copypaste {
         layers = <16>;
         bindings = <&kp LC(Y)>, <&kp LC(Z)>, <&kp LC(V)>, <&kp LC(C)>;
 
@@ -26,9 +26,9 @@
         tap-ms = <0>;
     };
 
-         arrows {
-             layers = <17>;
-             bindings =
+     arrows_arrows {
+         layers = <17>;
+         bindings =
                  <&kp RIGHT_ARROW>,
                  <&kp LEFT_ARROW>,
                  <&kp UP_ARROW>,
