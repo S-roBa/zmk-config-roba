@@ -387,10 +387,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &lt 14 I      &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 15 K      &lt 13 L  &lt 0 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &lt 11 TAB           &B_F20            &kp N        &kp M  &lt 16 COMMA  &kp DOT   &lt 3 SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &bspc_del         &lt 5 ENTER                                 &mo 18
+&kp Q      &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 0 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &lt 12 TAB           &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &bspc_del         &lt 5 ENTER                                 &mo 19
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -398,10 +398,10 @@
 
         default-apple {
             bindings = <
-&kp Q     &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 14 I      &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 15 K      &lt 13 L  &lt 0 MINUS
-&kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 11 TAB          &B_F20            &kp N        &kp M  &lt 16 COMMA  &kp DOT   &lt 3 SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 5 ENTER                                 &mo 18
+&kp Q     &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 0 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 12 TAB          &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 5 ENTER                                 &mo 19
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -475,10 +475,10 @@
 
         YouTube {
             bindings = <
-&none  &none  &none  &none  &none                                      &kp LC(W)      &kp LC(PG_UP)  &lt 14 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 0             &mkp MB1          &kp LS(LC(T))  &YTBack        &lt_YTMute 15 0  &YTForward         &mo 0
+&none  &none  &none  &none  &none                                      &kp LC(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &to 0             &mkp MB1          &kp LS(LC(T))  &YTBack        &lt_YTMute 16 0  &YTForward         &mo 0
 &none  &none  &none  &none  &none  &none             &mkp MB3          &mkp MB3       &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &lt 11 LANG1      &lt 10 BACKSPACE  &kp SPACE                                                         &none
+&none  &none  &none  &none  &none  &lt 12 LANG1      &lt 10 BACKSPACE  &kp SPACE                                                         &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -486,10 +486,10 @@
 
         YouTubeforMAC {
             bindings = <
-&none  &none  &none  &none  &none                        &kp LG(W)      &kp LC(PG_UP)  &lt 14 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none                        &kp LG(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
 &none  &none  &none  &none  &none  &to 1       &none     &kp LS(LG(T))  &YTBack        &YTMute          &YTForward         &mo 0
 &none  &none  &none  &none  &none  &none       &mkp MB1  &mkp MB3       &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &mo 11      &mo 10    &kp SPACE                                                         &none
+&none  &none  &none  &none  &none  &mo 12      &mo 10    &kp SPACE                                                         &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -497,10 +497,21 @@
 
         YouTube-Typing {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R      &kp T                                           &kp Y         &kp U  &lt 14 I   &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1       &kp F20    &kp H         &kp J  &lt 15 K   &lt 13 L  &trans
-&kp Z      &kp X         &kp C         &kp V      &kp B                 &kp TAB        &kp B      &kp N         &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &kp LANG1      &bspc_del  &kp KP_ENTER                              &mo 18
+&kp Q      &kp W         &kp E         &kp R      &kp T                                          &kp Y         &kp U  &lt 15 I   &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1        &kp F20  &kp H         &kp J  &lt 16 K   &lt 14 L  &trans
+&kp Z      &kp X         &kp C         &kp V      &kp B                 &lt 12 TAB      &kp B    &kp N         &kp M  &kp COMMA  &kp DOT   &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &kp LANG1       &trans   &kp KP_ENTER                              &mo 19
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        YouTube-typing-mac {
+            bindings = <
+&kp Q     &kp W      &kp E         &kp R      &kp T                                                       &kp Y         &kp U  &lt 15 I   &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F      &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K   &lt 14 L  &lt 13 MINUS
+&kp Z     &kp X      &kp C         &kp V      &kp B                 &lt 12 TAB          &kp B             &kp N         &kp M  &kp COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &trans            &kp KP_ENTER                              &mo 19
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -508,21 +519,21 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                &to_layer_0 Y  &to_layer_0 U  &kp LG(TAB)    &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &trans                       &trans         &mkp MB5       &mkp MB1       &mb_mo 14 MB3  &mb_mo 13 MB2       &lt_to_layer_0 0 MINUS
-&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &mt LCTRL TAB                &to_layer_0 B  &mkp MB4       &kp LC(Z)      &lt 15 LC(Y)   &to_layer_0 PERIOD  &to_layer_0 SLASH
-&to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &lt_to_layer_0 13 LANG1      &trans         &trans                                                           &none
+&to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                 &to_layer_0 Y  &to_layer_0 U  &lt_to_layer_0 15 LG(TAB)  &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &mkp MB1                   &kp_mkp LALT MB1  &mkp MB5       &mkp MB1       &mb_mo 16 MB3              &mb_mo 14 MB2       &lt_to_layer_0 12 MINUS
+&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &lt_to_layer_0 12 TAB      &to_layer_0 B     &mkp MB4       &kp LC(Z)      &lt 17 LC(Y)               &to_layer_0 PERIOD  &lt_to_layer_0 3 SLASH
+&to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &mt LGUI LANG1             &trans            &trans                                                                       &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        auto-mouse-archive-forMac {
+        mouse-mac {
             bindings = <
-&to_layer_1 Q     &to_layer_1 W      &to_layer_1 E     &to_layer_1 R      &to_layer_1 T                                               &to_layer_1 Y  &to_layer_1 U  &lt 14 LC(UP_ARROW)  &to_layer_1 O       &to_layer_1 P
-&to_layer_1 A     &to_layer_1 S      &to_layer_1 D     &to_layer_1 F      &to_layer_1 G     &trans                     &trans         &mkp MB5       &mkp MB1       &mb_mo 15 MB3        &mb_mo 13 MB2       &lt_to_layer_1 13 MINUS
-&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &lt_to_layer_1 12 TAB      &to_layer_1 B  &mkp MB4       &kp LG(Z)      &lt 16 LS(LG(Z))     &to_layer_1 PERIOD  &to_layer_1 SLASH
-&to_layer_1 LGUI  &to_layer_1 LCTRL  &to_layer_1 LALT  &to_layer_1 LANG2  &mt LSHIFT SPACE  &mt LGUI LANG1             &trans         &trans                                                                 &none
+&to_layer_1 Q     &to_layer_1 W      &to_layer_1 E     &to_layer_1 R      &to_layer_1 T                                                  &to_layer_1 Y  &to_layer_1 U  &lt 15 LC(UP_ARROW)  &to_layer_1 O       &to_layer_1 P
+&to_layer_1 A     &to_layer_1 S      &to_layer_1 D     &to_layer_1 F      &to_layer_1 G     &mkp MB1                   &kp_mkp LALT MB1  &mkp MB5       &mkp MB1       &mb_mo 16 MB3        &mb_mo 14 MB2       &lt_to_layer_1 13 MINUS
+&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &lt_to_layer_1 13 TAB      &to_layer_1 B     &mkp MB4       &kp LG(Z)      &lt 17 LS(LG(Z))     &to_layer_1 PERIOD  &lt_to_layer_1 4 SLASH
+&to_layer_1 LGUI  &to_layer_1 LCTRL  &to_layer_1 LALT  &to_layer_1 LANG2  &mt LSHIFT SPACE  &mt LGUI LANG1             &trans            &trans                                                                 &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -530,8 +541,8 @@
 
         MOUSE_SLOW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mo 14  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 15  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mo 15  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 16  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
@@ -575,7 +586,7 @@
         LogicPro {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &to 1       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
@@ -586,7 +597,7 @@
         Bluetooth {
             bindings = <
 &Windows1     &MacOS        &iPhone       &iPad         &Windows2                                  &none  &none          &none  &none   &kp PRINTSCREEN
-&to 0         &to 0         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 17  &to 9
+&to 0         &to 0         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 18  &to 9
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &to 8
 &none         &none         &none         &none         &none         &none           &none        &none                                &trans
             >;
