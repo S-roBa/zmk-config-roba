@@ -388,7 +388,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &lt 15 I      &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 0 MINUS
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
 &kp Z      &kp X         &kp C         &kp V        &kp B                 &lt 12 TAB           &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &bspc_del         &lt 5 ENTER                                 &mo 19
             >;
@@ -398,9 +398,9 @@
 
         default-apple {
             bindings = <
-&kp Q     &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 15 I      &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 0 MINUS
-&kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 12 TAB          &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
+&lt 2 Q   &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 13 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 13 TAB          &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 4 SLASH
 &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 5 ENTER                                 &mo 19
             >;
 
@@ -420,10 +420,10 @@
 
         FUNCTIONandCODE {
             bindings = <
-&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                     &none      &kp LS(LC(R))  &none  &kp LS(LC(O))  &none
-&none      &F4toF14  &F5toF15  &F6toF16  &kp F11          &trans      &trans         &kp LC(H)  &kp LS(LC(F))  &none  &none          &none
-&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10          &trans      &kp LC(SPACE)  &none      &none          &none  &none          &none
-&trans     &trans    &trans    &none     &mt LSHFT SPACE  &none       &trans         &none                                           &none
+&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                             &none      &kp LS(LC(R))  &none  &kp LS(LC(O))  &none
+&none      &F4toF14  &F5toF15  &F6toF16  &kp F11  &trans      &trans         &kp LC(H)  &kp LS(LC(F))  &none  &none          &none
+&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10  &trans      &kp LC(SPACE)  &none      &none          &none  &none          &trans
+&trans     &trans    &trans    &trans    &trans   &trans      &trans         &trans                                          &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -431,10 +431,10 @@
 
         FandCforMAC-mada {
             bindings = <
-&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                                     &none      &kp LS(LC(R))  &none  &kp LS(LC(O))  &none
-&none      &F4toF14  &F5toF15  &F6toF16  &kp F11          &trans      &trans         &kp LC(H)  &kp LS(LC(F))  &none  &none          &none
-&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10          &trans      &kp LC(SPACE)  &none      &none          &none  &none          &none
-&trans     &trans    &trans    &none     &mt LSHFT SPACE  &none       &trans         &none                                           &none
+&none      &F7toF17  &F8toF18  &F9toF19  &kp F12                             &none      &kp LS(LC(R))  &none  &kp LS(LC(O))  &none
+&none      &F4toF14  &F5toF15  &F6toF16  &kp F11  &trans      &trans         &kp LC(H)  &kp LS(LC(F))  &none  &none          &none
+&kp RSHFT  &F1toF11  &F2toF12  &F3toF13  &kp F10  &trans      &kp LC(SPACE)  &none      &none          &none  &none          &trans
+&trans     &trans    &trans    &trans    &trans   &trans      &trans         &trans                                          &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -444,8 +444,8 @@
             bindings = <
 &IMEOFF_Percent  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &IMEOFF_Caret                                        &kp LC(W)               &kp LC(PG_UP)    &kp UP_ARROW    &kp LC(PG_DN)  &kp LC(LS(T))
 &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT      &mt LGUI END
-&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &none           &kp LC(LG(LEFT_ARROW))  &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)    &kp LC(LG(RIGHT_ARROW))
-&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &none                 &kp KP_NUMLOCK  &trans                                                                  &none
+&kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &trans          &kp LC(LG(LEFT_ARROW))  &kp LS(LA(TAB))  &kp LG(TAB)     &kp LA(TAB)    &kp LC(LG(RIGHT_ARROW))
+&trans           &kp KP_N0        &kp KP_DOT       &kp KP_EQUAL     &trans         &trans                &kp KP_NUMLOCK  &trans                                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -455,8 +455,8 @@
             bindings = <
 &IMEOFF_Percent  &kp N7        &kp N8        &kp N9        &IMEOFF_Caret                                        &kp LG(W)           &kp LG(LS(TAB))  &kp UP_ARROW      &kp LG(TAB)      &kp LG(LS(T))
 &kp KP_SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS   &trans                &trans          &mt LALT HOME       &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW  &mt LG(LCTRL) END
-&kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &none           &kp LC(LEFT_ARROW)  &kp LS(LA(TAB))  &kp LC(UP_ARROW)  &kp LA(TAB)      &kp LC(RIGHT_ARROW)
-&trans           &kp N0        &kp KP_DOT    &kp KP_EQUAL  &trans         &none                 &kp KP_NUMLOCK  &trans                                                                  &none
+&kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS    &IMEOFF_LessThan      &trans          &kp LC(LEFT_ARROW)  &kp LS(LA(TAB))  &kp LC(UP_ARROW)  &kp LA(TAB)      &kp LC(RIGHT_ARROW)
+&trans           &kp N0        &kp KP_DOT    &kp KP_EQUAL  &trans         &trans                &kp KP_NUMLOCK  &trans                                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -466,8 +466,8 @@
             bindings = <
 &kp ESC    &kp AMPERSAND       &none          &none       &kp DOUBLE_QUOTES                      &kp SQT        &IMEOFF_LBRC   &IMEOFF_RBRC   &IMEOFF_LBKT      &IMEOFF_RBKT
 &kp SLASH  &mt LC(LSHFT) PIPE  &kp BACKSLASH  &kp DOLLAR  &kp COLON          &trans      &trans  &kp SEMICOLON  &IMEOFF_LPAR   &IMEOFF_RPAR   &IMEOFF_LessThan  &IMEOFF_MoreThan
-&kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &kp TILDE          &trans      &none   &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &kp EXCL
-&trans     &trans              &trans         &trans      &trans             &none       &none   &none                                                          &none
+&kp LSHFT  &kp EXCLAMATION     &kp AT_SIGN    &kp HASH    &kp TILDE          &trans      &trans  &kp GRAVE      &IMEON_Lkakko  &IMEON_Rkakko  &none             &kp EXCL
+&trans     &trans              &trans         &trans      &trans             &none       &trans  &trans                                                         &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -475,10 +475,10 @@
 
         YouTube {
             bindings = <
-&none  &none  &none  &none  &none                                      &kp LC(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 0             &mkp MB1          &kp LS(LC(T))  &YTBack        &lt_YTMute 16 0  &YTForward         &mo 0
-&none  &none  &none  &none  &none  &none             &mkp MB3          &mkp MB3       &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &lt 12 LANG1      &lt 10 BACKSPACE  &kp SPACE                                                         &none
+&none  &none  &none  &none  &none                                &kp LC(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &to 0       &mkp MB1          &kp LS(LC(T))  &YTBack        &lt_YTMute 16 0  &YTForward         &mo 12
+&none  &none  &none  &none  &none  &mo 12      &mkp MB3          &none          &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none       &lt 10 BACKSPACE  &kp SPACE                                                         &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -486,10 +486,10 @@
 
         YouTubeforMAC {
             bindings = <
-&none  &none  &none  &none  &none                        &kp LG(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 1       &none     &kp LS(LG(T))  &YTBack        &YTMute          &YTForward         &mo 0
-&none  &none  &none  &none  &none  &none       &mkp MB1  &mkp MB3       &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &mo 12      &mo 10    &kp SPACE                                                         &none
+&none  &none  &none  &none  &none                                &kp LG(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW  &kp LC(PAGE_DOWN)  &kp RA(P)
+&none  &none  &none  &none  &none  &to 1       &mkp MB1          &kp LS(LG(T))  &YTBack        &lt_YTMute 16 0  &YTForward         &mo 13
+&none  &none  &none  &none  &none  &mo 13      &mkp MB3          &none          &kp C          &YTSpeedMinus    &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &none       &lt 10 BACKSPACE  &kp SPACE                                                         &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -497,10 +497,10 @@
 
         YouTube-Typing {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R      &kp T                                          &kp Y         &kp U  &lt 15 I   &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1        &kp F20  &kp H         &kp J  &lt 16 K   &lt 14 L  &trans
-&kp Z      &kp X         &kp C         &kp V      &kp B                 &lt 12 TAB      &kp B    &kp N         &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &kp LANG1       &trans   &kp KP_ENTER                              &mo 19
+&kp Q      &kp W         &kp E         &kp R      &kp T                                                        &kp Y         &kp U  &lt 15 I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
+&kp Z      &kp X         &kp C         &kp V      &kp B                 &lt 12 TAB           &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &trans            &kp KP_ENTER                                 &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -508,10 +508,10 @@
 
         YouTube-typing-mac {
             bindings = <
-&kp Q     &kp W      &kp E         &kp R      &kp T                                                       &kp Y         &kp U  &lt 15 I   &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F      &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K   &lt 14 L  &lt 13 MINUS
-&kp Z     &kp X      &kp C         &kp V      &kp B                 &lt 12 TAB          &kp B             &kp N         &kp M  &kp COMMA  &kp DOT   &kp SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &trans            &kp KP_ENTER                              &mo 19
+&kp Q     &kp W      &kp E         &kp R      &kp T                                                       &kp Y         &kp U  &lt 15 I      &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F      &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K      &lt 14 L  &lt 13 MINUS
+&kp Z     &kp X      &kp C         &kp V      &kp B                 &lt 13 TAB          &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &trans            &kp KP_ENTER                                 &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -521,7 +521,7 @@
             bindings = <
 &to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                 &to_layer_0 Y  &to_layer_0 U  &lt_to_layer_0 15 LG(TAB)  &to_layer_0 O       &to_layer_0 P
 &to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &mkp MB1                   &kp_mkp LALT MB1  &mkp MB5       &mkp MB1       &mb_mo 16 MB3              &mb_mo 14 MB2       &lt_to_layer_0 12 MINUS
-&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &lt_to_layer_0 12 TAB      &to_layer_0 B     &mkp MB4       &kp LC(Z)      &lt 17 LC(Y)               &to_layer_0 PERIOD  &lt_to_layer_0 3 SLASH
+&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &lt_to_layer_0 12 TAB      &to_layer_0 B     &mkp MB4       &kp LC(Z)      &lt 17 LC(Y)               &to_layer_0 PERIOD  &to_layer_0 SLASH
 &to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &mt LGUI LANG1             &trans            &trans                                                                       &none
             >;
 
@@ -532,7 +532,7 @@
             bindings = <
 &to_layer_1 Q     &to_layer_1 W      &to_layer_1 E     &to_layer_1 R      &to_layer_1 T                                                  &to_layer_1 Y  &to_layer_1 U  &lt 15 LC(UP_ARROW)  &to_layer_1 O       &to_layer_1 P
 &to_layer_1 A     &to_layer_1 S      &to_layer_1 D     &to_layer_1 F      &to_layer_1 G     &mkp MB1                   &kp_mkp LALT MB1  &mkp MB5       &mkp MB1       &mb_mo 16 MB3        &mb_mo 14 MB2       &lt_to_layer_1 13 MINUS
-&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &lt_to_layer_1 13 TAB      &to_layer_1 B     &mkp MB4       &kp LG(Z)      &lt 17 LS(LG(Z))     &to_layer_1 PERIOD  &lt_to_layer_1 4 SLASH
+&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &lt_to_layer_1 13 TAB      &to_layer_1 B     &mkp MB4       &kp LG(Z)      &lt 17 LS(LG(Z))     &to_layer_1 PERIOD  &to_layer_1 SLASH
 &to_layer_1 LGUI  &to_layer_1 LCTRL  &to_layer_1 LALT  &to_layer_1 LANG2  &mt LSHIFT SPACE  &mt LGUI LANG1             &trans            &trans                                                                 &none
             >;
 
