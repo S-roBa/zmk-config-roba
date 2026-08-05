@@ -26,13 +26,13 @@
         tap-ms = <0>;
     };
 
-     arrows_arrows {
-         layers = <17>;
-         bindings =
-                 <&kp RIGHT_ARROW>,
-                 <&kp LEFT_ARROW>,
-                 <&kp UP_ARROW>,
-                 <&kp DOWN_ARROW>;
+    arrows_arrows {
+        layers = <17>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
 
         tick = <10>;
         wait-ms = <0>;
@@ -47,7 +47,6 @@
         wait-ms = <0>;
         tap-ms = <0>;
     };
-
 };
 
 / {
@@ -624,6 +623,17 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &to 8
 &none         &none         &none         &none         &none         &none           &none        &none                                &trans
             >;
+        };
+
+        GESTURE2_MAC {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
