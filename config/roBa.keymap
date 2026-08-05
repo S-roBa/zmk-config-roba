@@ -34,10 +34,20 @@
                  <&kp UP_ARROW>,
                  <&kp DOWN_ARROW>;
 
-             tick = <10>;
-             wait-ms = <0>;
-             tap-ms = <5>;
-         };
+        tick = <10>;
+        wait-ms = <0>;
+        tap-ms = <5>;
+    };
+
+    arrows_copypaste_mac {
+        layers = <18>;
+        bindings = <&kp LS(LG(Z))>, <&kp LG(Z)>, <&kp LG(V)>, <&kp LG(C)>;
+
+        tick = <450>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+    };
+
 };
 
 / {
