@@ -423,7 +423,7 @@
 &lt 2 Q   &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 15 I      &kp O     &kp P
 &kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 18 K      &lt 14 L  &lt 13 MINUS
 &kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 13 TAB          &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 4 SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 5 ENTER                                 &mo 20
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 6 ENTER                                 &mo 20
             >;
 
             sensor-bindings = <&scroll_up_down>;
