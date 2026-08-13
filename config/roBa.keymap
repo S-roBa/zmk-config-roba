@@ -629,10 +629,10 @@
 
         Bluetooth {
             bindings = <
-&Windows1     &MacOS        &iPhone       &iPad         &Windows2                                  &none  &none          &none  &none   &kp PRINTSCREEN
-&to 0         &to 1         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none          &none  &to 19  &to 9
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))  &none  &none   &to 8
-&none         &none         &none         &none         &none         &none           &none        &none                                &trans
+&Windows1     &MacOS        &iPhone       &iPad         &Windows2                                  &none  &kp LS(LA(LC(LG(O))))  &kp LA(LC(LG(O)))  &kp LA(LC(LG(P)))  &kp PRINTSCREEN
+&to 0         &to 1         &out OUT_TOG  &none         &none         &sys_reset      &bootloader  &none  &none                  &none              &to 19             &to 9
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &none        &none  &kp LG(LA(K))          &none              &none              &to 8
+&none         &none         &none         &none         &none         &none           &none        &none                                                               &trans
             >;
         };
     };
