@@ -418,10 +418,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U  &lt 15 I      &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B                 &lt 12 TAB           &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &bspc_del         &lt 5 ENTER                                 &mo 20
+&kp Q      &kp W         &kp E         &kp R        &kp T                                                      &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G                 &mkp MB1           &kp_mkp LALT MB1  &kp H        &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
+&kp Z      &kp X         &kp C         &kp V        &kp B                 &mt LCTRL TAB      &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 3 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 12 LANG1       &bspc_del         &lt 5 ENTER                                 &mo 20
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -429,10 +429,10 @@
 
         default-apple {
             bindings = <
-&lt 2 Q   &kp W      &kp E         &kp R        &kp T                                                       &kp Y        &kp U  &lt 15 I      &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H        &kp J  &lt 18 K      &lt 14 L  &lt 13 MINUS
-&kp Z     &kp X      &kp C         &kp V        &kp B                 &lt 13 TAB          &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 4 SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &bspc_del         &lt 6 ENTER                                 &mo 20
+&lt 2 Q   &kp W      &kp E         &kp R        &kp T                                                     &kp Y        &kp U  &lt 15 I      &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F        &kp G                 &mkp MB1          &kp_mkp LALT MB1  &kp H        &kp J  &lt 18 K      &lt 14 L  &lt 13 MINUS
+&kp Z     &kp X      &kp C         &kp V        &kp B                 &mt LGUI TAB      &B_F20            &kp N        &kp M  &lt 17 COMMA  &kp DOT   &lt 4 SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 7 LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1      &bspc_del         &lt 6 ENTER                                 &mo 20
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -528,10 +528,10 @@
 
         YouTube-Typing {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R      &kp T                                                        &kp Y         &kp U  &lt 15 I      &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1             &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
-&kp Z      &kp X         &kp C         &kp V      &kp B                 &lt 12 TAB           &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG1      &trans            &kp KP_ENTER                                 &none
+&kp Q      &kp W         &kp E         &kp R      &kp T                                                      &kp Y         &kp U  &lt 15 I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F      &kp G                 &mkp MB1           &kp_mkp LALT MB1  &kp H         &kp J  &lt 16 K      &lt 14 L  &lt 12 MINUS
+&kp Z      &kp X         &kp C         &kp V      &kp B                 &mt LCTRL TAB      &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &lt 12 LANG1       &trans            &kp KP_ENTER                                 &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -539,10 +539,10 @@
 
         YouTube-typing-mac {
             bindings = <
-&kp Q     &kp W      &kp E         &kp R      &kp T                                                       &kp Y         &kp U  &lt 15 I      &kp O     &kp P
-&kp A     &kp S      &kp D         &kp F      &kp G                 &mkp MB1            &kp_mkp LALT MB1  &kp H         &kp J  &lt 18 K      &lt 14 L  &lt 13 MINUS
-&kp Z     &kp X      &kp C         &kp V      &kp B                 &lt 13 TAB          &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
-&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &mt LGUI LANG1      &trans            &kp KP_ENTER                                 &none
+&kp Q     &kp W      &kp E         &kp R      &kp T                                                     &kp Y         &kp U  &lt 15 I      &kp O     &kp P
+&kp A     &kp S      &kp D         &kp F      &kp G                 &mkp MB1          &kp_mkp LALT MB1  &kp H         &kp J  &lt 18 K      &lt 14 L  &lt 13 MINUS
+&kp Z     &kp X      &kp C         &kp V      &kp B                 &mt LGUI TAB      &B_F20            &kp N         &kp M  &lt 17 COMMA  &kp DOT   &kp SLASH
+&kp LGUI  &kp LCTRL  &kp LEFT_ALT  &kp LANG2  &mt LEFT_SHIFT SPACE  &lt 13 LANG1      &trans            &kp KP_ENTER                                 &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -550,10 +550,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                 &to_layer_0 Y  &mkp MB4   &lt 15 LG(TAB)  &mkp MB5       &to_layer_0 P
-&to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &mkp MB1                   &kp_mkp LALT MB1  &to_layer_0 H  &mkp MB1   &mb_mo 16 MB3   &mb_mo 14 MB2  &lt_to_layer_0 12 MINUS
-&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &lt_to_layer_0 12 TAB      &to_layer_0 B     &to_layer_0 N  &kp LC(Z)  &lt 17 COMMA    &kp LC(Y)      &to_layer_0 SLASH
-&to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &mt LCTRL LANG1            &trans            &trans                                                   &none
+&to_layer_0 Q      &to_layer_0 W     &to_layer_0 E     &to_layer_0 R      &to_layer_0 T                                                   &to_layer_0 Y  &mkp MB4   &lt 15 LG(TAB)  &mkp MB5       &to_layer_0 P
+&to_layer_0 A      &to_layer_0 S     &to_layer_0 D     &to_layer_0 F      &to_layer_0 G    &mkp MB1                     &kp_mkp LALT MB1  &to_layer_0 H  &mkp MB1   &mb_mo 16 MB3   &mb_mo 14 MB2  &lt_to_layer_0 12 MINUS
+&to_layer_0 Z      &to_layer_0 X     &to_layer_0 C     &to_layer_0 V      &to_layer_0 B    &mt LCTRL TAB                &to_layer_0 B     &to_layer_0 N  &kp LC(Z)  &lt 17 COMMA    &kp LC(Y)      &to_layer_0 SLASH
+&to_layer_0 LCTRL  &to_layer_0 LGUI  &to_layer_0 LALT  &to_layer_0 LANG2  &mt LSHFT SPACE  &lt_to_layer_0 12 LANG1      &trans            &trans                                                   &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -561,10 +561,10 @@
 
         mouse-mac {
             bindings = <
-&to_layer_1 Q     &to_layer_1 W      &to_layer_1 E     &to_layer_1 R      &to_layer_1 T                                                  &to_layer_1 Y  &kp LG(LBKT)  &lt 15 LC(UP_ARROW)  &kp LG(RBKT)   &to_layer_1 P
-&to_layer_1 A     &to_layer_1 S      &to_layer_1 D     &to_layer_1 F      &to_layer_1 G     &mkp MB1                   &kp_mkp LALT MB1  &to_layer_1 H  &mkp MB1      &mb_mo 18 MB3        &mb_mo 14 MB2  &lt_to_layer_1 13 MINUS
-&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &lt_to_layer_1 13 TAB      &to_layer_1 B     &to_layer_1 N  &kp LG(Z)     &lt 17 COMMA         &kp LS(LG(Z))  &to_layer_1 SLASH
-&to_layer_1 LGUI  &to_layer_1 LCTRL  &to_layer_1 LALT  &to_layer_1 LANG2  &mt LSHIFT SPACE  &mt LGUI LANG1             &trans            &trans                                                           &none
+&to_layer_1 Q     &to_layer_1 W      &to_layer_1 E     &to_layer_1 R      &to_layer_1 T                                                    &to_layer_1 Y  &kp LG(LBKT)  &lt 15 LC(UP_ARROW)  &kp LG(RBKT)   &to_layer_1 P
+&to_layer_1 A     &to_layer_1 S      &to_layer_1 D     &to_layer_1 F      &to_layer_1 G     &mkp MB1                     &kp_mkp LALT MB1  &to_layer_1 H  &mkp MB1      &mb_mo 18 MB3        &mb_mo 14 MB2  &lt_to_layer_1 13 MINUS
+&to_layer_1 Z     &to_layer_1 X      &to_layer_1 C     &to_layer_1 V      &to_layer_1 B     &mt LGUI TAB                 &to_layer_1 B     &to_layer_1 N  &kp LG(Z)     &lt 17 COMMA         &kp LS(LG(Z))  &to_layer_1 SLASH
+&to_layer_1 LGUI  &to_layer_1 LCTRL  &to_layer_1 LALT  &to_layer_1 LANG2  &mt LSHIFT SPACE  &lt_to_layer_1 13 LANG1      &trans            &trans                                                           &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
