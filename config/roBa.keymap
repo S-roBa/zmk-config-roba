@@ -507,9 +507,9 @@
         YouTube {
             bindings = <
 &none  &none  &none  &none  &none                                &kp LC(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW    &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 0       &mkp MB1          &kp LS(LC(T))  &YTBack        &lt 16 DOWN_ARROW  &YTForward         &mo 12
-&none  &none  &none  &none  &none  &mo 12      &mkp MB3          &none          &CtoM          &YTSpeedMinus      &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none       &lt 10 BACKSPACE  &kp SPACE                                                           &none
+&none  &none  &none  &kp F  &none  &to 0       &mkp MB1          &kp LS(LC(T))  &YTBack        &lt 16 DOWN_ARROW  &YTForward         &mo 12
+&none  &none  &none  &none  &none  &none       &mkp MB3          &none          &CtoM          &YTSpeedMinus      &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &mo 12      &lt 10 BACKSPACE  &kp SPACE                                                           &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -518,9 +518,9 @@
         YouTubeforMAC {
             bindings = <
 &none  &none  &none  &none  &none                                &kp LG(W)      &kp LC(PG_UP)  &lt 15 UP_ARROW    &kp LC(PAGE_DOWN)  &kp RA(P)
-&none  &none  &none  &none  &none  &to 1       &mkp MB1          &kp LS(LG(T))  &YTBack        &lt 18 DOWN_ARROW  &YTForward         &mo 13
-&none  &none  &none  &none  &none  &mo 13      &mkp MB3          &none          &CtoM          &YTSpeedMinus      &YTSpeedPlus       &kp RSHFT
-&none  &none  &none  &none  &none  &none       &lt 10 BACKSPACE  &kp SPACE                                                           &none
+&none  &none  &none  &kp F  &none  &to 1       &mkp MB1          &kp LS(LG(T))  &YTBack        &lt 18 DOWN_ARROW  &YTForward         &mo 13
+&none  &none  &none  &none  &none  &none       &mkp MB3          &none          &CtoM          &YTSpeedMinus      &YTSpeedPlus       &kp RSHFT
+&none  &none  &none  &none  &none  &mo 13      &lt 10 BACKSPACE  &kp SPACE                                                           &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
