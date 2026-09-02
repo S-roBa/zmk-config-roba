@@ -411,6 +411,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        Q_ALTF4: Q_ALTF4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_ALTF4";
+            bindings = <&kp Q>, <&kp LA(F4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL)>;
+        };
     };
 
     keymap {
